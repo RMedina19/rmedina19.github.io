@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A title
+title: Inflation Explainer
 date: 2023-02-15
 ---
 
