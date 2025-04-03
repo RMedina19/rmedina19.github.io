@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Projects
+permalink: /projects/
 ---
 
 I am a graduate student and Fulbright scholar at The University of Chicago, finishing my MS in Computational Analysis and Public Policy (MSCAPP) program.
