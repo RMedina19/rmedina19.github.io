@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A title
-date: YYYY-MM-DD
+date: 2023-02-15
 ---
 
 
