@@ -1,24 +1,10 @@
 ---
-layout: template 
----
+title: About
+layout: template
+filename: index
+order: 0
+---  
 
-<div>
-	<p>
-	Welcome to my personal website! Here you will find my software developement, data science, and writing projects.
-	</p>
-</div>
+### [CV](https://github.com/RMedina19/rmedina19.github.io/blob/master/documents/2025_Resume_RMedina.pdf){:target="_blank"}
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+[Ver en Español](/es/)
