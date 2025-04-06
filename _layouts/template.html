@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=.9">
+
+    <!-- Page title -->
+    <title>Regina Isabel Medina</title>
+
+    <!-- Favicon taco emoji -->
+	<!-- Ref: https://favicon.io/emoji-favicons/ -->
+    <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%2020'%3E%3Ctext%20x='0'%20y='14'%3E🌮%3C/text%3E%3C/svg%3E" type="image/svg+xml" />
+    
+    {% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+
+  <style>
+    /* General link styles */
+    a {
+      color: #303952;
+    }
+  
+    a:visited {
+      color: #303952;
+    }
+  
+    a:hover {
+      color: #303952;
+    }
+  
+    a:active {
+      color: #303952;
+    }
+  
+    /* Navigation bar styling */
+    nav ul {
+      display: flex;
+      justify-content: center; /* Centers the tabs horizontally */
+      align-items: center; /* Ensures vertical alignment */
+      list-style: none;
+      padding: 0; /* Removes default padding */
+      margin: 10px 0; /* Adds vertical spacing */
+    }
+  
+    nav ul li {
+      margin: 0 10px; /* Adds spacing between the tabs */
+    }
+  
+    nav ul li:first-child {
+      margin-left: 0; /* Removes left margin for the first tab */
+      padding-left: 15px; /* Adjusts spacing to move it slightly to the left */
+    }
+  
+    nav ul li a {
+      text-decoration: none;
+      font-size: 14px;
+    }
+  
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+  
+    .active {
+      text-decoration: underline;
+    }
+  </style>
+    
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h2><b>Regina Isabel Medina</b></h2>
+        <img src="https://github.com/RMedina19/rmedina19.github.io/blob/master/images/retrato.jpg" alt="Profile Picture">
+        <p>
+          MS in Computational Analysis and Public Policy at The University of Chicago           
+        </p>
+        <small>rmedina [at] uchicago.edu</small>
+        <div>
+          <a href="https://scholar.google.com/citations?user=kxaxhrQAAAAJ&hl=es" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" height="20" width="20" alt="Google Scholar">
+          </a>
+        </div>
+        <small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
+        {% if site.show_downloads %}
+        <ul class="downloads">
+          <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
+          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
+        </ul>
+        {% endif %}
+      </header>
+     
+      <section>
+        <nav>
+          <ul>
+            {% assign sorted_pages = site.pages | sort:"order" %}
+              {% for node in sorted_pages %}
+              <li><a class="{% if page.url == node.url %}active{% endif %}" href="{{node.url}}">{{node.title}}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>  
+        
+        {{ content }}
+
+      </section>  
+      
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>
+
+

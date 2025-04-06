@@ -4,7 +4,7 @@ title:  Parallel Convolution for an Image Processing System with Go
 date: 2025-03-15
 ---
 
-![golang-gopher](./images/flying_gopher.jpg)
+![golang-gopher](https://go.googlesource.com/website/+/refs/heads/master/_content/doc/gopher/biplane.jpg)
 
 Is no secret that Golang is great for building concurrent programs. In fact, one of the main goals of the language was precisely to provide a quick intuitive way of implementing parallel algorithms.
 
